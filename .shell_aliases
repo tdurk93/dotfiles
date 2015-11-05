@@ -1,0 +1,10 @@
+alias ls=' ls --color'
+alias powerdown='sudo shutdown -hP now'
+alias mygrep='grep -rniI'
+alias open='xdg-open'
+alias diff='colordiff'
+alias unbinary='echo c'
+alias dirs='dirs -v'
+alias bd=". bd -s"
+alias ed="ed -p:"
+alias co="git checkout"
