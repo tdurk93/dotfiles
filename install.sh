@@ -5,8 +5,8 @@
 BACKUPDIR=backup_`date +%F`_`date +%T | tr : -`
 echo "making backup directory $BACKUPDIR"
 mkdir $BACKUPDIR
-
-DOTFILES=`find -maxdepth 1 -name ".*" -not -type d`
+SCRIPTDIR=`dirname $0`
+DOTFILES=`find $SCRIPTDIR -maxdepth 1 -name ".*" -not -type d`
 for f in $DOTFILES; do
     FILENAME="`basename $f`"
     BACKUPPATH="$BACKUPDIR/$FILENAME"
